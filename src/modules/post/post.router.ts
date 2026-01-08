@@ -7,6 +7,9 @@ const router = express.Router();
 // Public Route - Get All Posts
 router.get("/", PostController.getAllPosts);
 
+// Protected Route - Get Post By Id
+router.get("/:postId", PostController.getPostById);
+
 // Protected Route - Create Post
 router.post(
   "/",
